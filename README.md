@@ -11,14 +11,13 @@ This dataset is organized based on the edge detection task, aiming to provide ri
 ## Usage Instructions
 For users who conduct image processing using Python, they can utilize the cv2 (OpenCV) library to read image data. The sample code is as follows:
 
-...
-python
+```python
 import cv2
 # Read original image
 original_image = cv2.imread('Originals/image1.jpg')
 # Read the corresponding Ground Truth image
 ground_truth_image = cv2.imread('Ground Truth/image1.png', cv2.IMREAD_GRAYSCALE)
-...
+```
 
 在基于深度学习框架（如 TensorFlow、PyTorch）进行模型训练时，可根据框架的数据加载机制，将数据集路径配置到相应的数据集加载类中，确保模型能够正确读取和处理图像及其标注数据。
 四、数据来源与标注
